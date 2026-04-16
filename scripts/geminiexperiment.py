@@ -6,7 +6,7 @@ import google.generativeai as genai
 import os
 
 # Set up your NEW API Key
-genai.configure(api_key="AIzaSyABTh4kEMz2B9OGRAU1hQk6Gn6od1oVldM")
+genai.configure(api_key="ReplaceWithYourKeyHere")
 
 # Initialize the model 
 model = genai.GenerativeModel('gemini-3-flash-preview')
