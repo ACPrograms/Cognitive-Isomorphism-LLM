@@ -8,7 +8,7 @@ import re
 
 print("Loading API results...")
 # Load the dataset generated in Phase 2
-df = pd.read_csv("tamazight_gemini_results.csv")
+df = pd.read_csv("../data/tamazight_gemini_results.csv")
 
 # Drop any rows where the API completely failed or returned empty
 df = df.dropna(subset=['Tamazight_Kabyle', 'LLM_Translation'])
@@ -63,6 +63,6 @@ print(f"Average Character Error Rate (CER): {avg_cer:.4f} (Lower is better, 0.0 
 print("==============================\n")
 
 # Export for the final paper
-output_filename = "tamazight_final_scored.csv"
+output_filename = "../data/tamazight_final_scored.csv"
 df.to_csv(output_filename, index=False)
 print(f"Phase 3 Complete: Scored dataset saved to {output_filename}.")
