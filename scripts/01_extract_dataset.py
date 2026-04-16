@@ -10,12 +10,12 @@ df = pd.DataFrame(dataset)
 
 # Handle both flat and nested 'translation' structures dynamically
 if 'translation' in df.columns and len(df.columns) == 1:
-    df_cleaned = df['translation'].apply(pd.Series).dropna().head(6600)
+    df_cleaned = df['translation'].apply(pd.Series).dropna().head(3000)
 else:
     df_cleaned = df.dropna().head(3000)
 
 # Export to CSV
-output_filename = "tamazight_french_3000.csv"
+output_filename = "../data/tamazight_french_3001.csv"
 df_cleaned.to_csv(output_filename, index=False)
 
 print(f"Phase 1 Complete: {len(df_cleaned)} parallel tokens saved to {output_filename}.")
