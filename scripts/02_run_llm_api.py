@@ -14,7 +14,7 @@ print("Model initialized: Gemini 3 Flash Preview")
 
 # Load the data
 print("Loading dataset...")
-df = pd.read_csv("tamazight_french_3001.csv", header=None, names=["ID_Kab", "Tamazight_Kabyle", "ID_Fr", "French"])
+df = pd.read_csv("../data/tamazight_french_3001.csv", header=None, names=["ID_Kab", "Tamazight_Kabyle", "ID_Fr", "French"])
 
 df = df[["French", "Tamazight_Kabyle"]]
 df["LLM_Translation"] = ""
@@ -65,6 +65,6 @@ for index, row in df.iterrows():
                 df.at[index, "LLM_Translation"] = "ERROR"
 
 # Export the final results
-output_filename = "tamazight_gemini_results.csv"
+output_filename = "../data/tamazight_gemini_results.csv"
 df.to_csv(output_filename, index=False)
 print(f"Phase 2 Complete: Results saved to {output_filename}.")
