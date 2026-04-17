@@ -1,8 +1,8 @@
 # Cognitive Isomorphism in Large Language Models: Evaluating Emergent Phonological and Morphological Awareness in Low-Resource Dialects
 
-**Author:** [Your Name Here]  
+**Author:** [Amar Chabli]  
 **Date:** April 2026  
-**Institution:** [Your Current College] / Independent Research 
+**Institution:** [Berkeley City College] / Independent Research 
 
 ## Abstract
 Modern Large Language Models (LLMs) exhibit highly sophisticated linguistic capabilities in high-resource languages, often mimicking human-like comprehension. This study investigates whether this behavior stems from "cognitive isomorphism"—an emergent, human-like understanding of phonological and morphological rules—or if it is strictly a byproduct of statistical pattern-matching across massive datasets. By evaluating the Gemini 3 Flash Preview model on a zero-shot translation task from a high-resource language (French) to a low-resource dialect (Kabyle/Tamazight), this research quantifies the model's structural failure rates. Utilizing a dataset of 3,001 parallel tokens, the model achieved an average BLEU score of 0.1130 and a Character Error Rate (CER) of 49.40%. These metrics indicate a near-total breakdown of morphological syntax, suggesting that LLMs lack emergent phonological awareness and rely heavily on data density rather than generalized cognitive-linguistic rules.
